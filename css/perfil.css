@@ -1,0 +1,584 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    width:100%;
+    height: 10vh;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav{
+    position: fixed;
+    align-items: center;
+    display:inline-block;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left: 60rem;
+    margin-top: -3.5rem;
+}
+.instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+    font-weight: 400;
+}
+.img-header{
+    width: 2rem;
+    margin-left: 2vh;
+    border-radius: 70%;
+    background-color: #FFF;
+}
+
+.perf{
+    border-radius: 50%;
+}
+
+
+.notificacao{
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 20rem;
+    border: 1px solid lightgray;
+    border-radius: 5%;
+    margin-top: 5rem;
+    margin-left: -200px;
+    z-index: 1;
+}
+
+.user-not{
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+    float: right;
+}
+
+/*bloco do perfil onde
+a foto fica ao lado das infos*/
+.perfil-bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 35%;
+    margin-top: 10rem;
+}
+
+.perfil-info{
+     position: absolute;
+     height: 50vh;
+    margin-left: 300px;
+    margin-top: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.perfil-info h2{
+    margin-top: -20rem;
+     font-size: 25px;
+}
+
+.perfil-bloco img{
+    border-radius: 50%;
+    width: 20vh;
+    padding: 2rem;
+    position: fixed;
+    margin-left: -50px;
+}
+
+.borda img{
+     position: absolute;
+     background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+     padding: 0.2rem;
+}
+
+.perf-numbers{
+
+    width: 100vh;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+}
+
+.descricao{
+     letter-spacing: 0.1rem;
+    font-size: 20px;
+}
+
+
+.descricao-bold{
+     letter-spacing: 0.1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*publicações*/
+.publicacoes{
+    margin-left: -320px;
+    margin-top: 500px;
+    width: 60%;
+    height: 600px;
+}
+.publi-square{
+    width: 30vh;
+    height: 30vh;
+    justify-content: space-around;
+    padding: 3rem;
+    border: solid 1px #e8e8e8;
+}
+
+/*tema escuro*/
+.darkmode--activated header{
+    background-color: #000;
+}
+
+.darkmode--activated .perfil-info{
+    color: #FFF;
+}
+
+.darkmode--activated .instagram-logo{
+    color: #FFF;
+}
+
+.darkmode--activated .post{
+    background-color: #000;
+    color: #FFF;
+}
+
+.darkmode--activated .notificacao{
+    background-color: #000;
+    color: #FFF;
+}
+
+
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+   .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 55rem;
+        margin-top:-3rem;
+    }
+
+
+    .perfil-info{
+     position: absolute;
+     height: 20vh;
+    margin-left: 350px;
+    margin-top: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+.perfil-bloco img{
+        border-radius: 50%;
+        width: 15vh;
+        padding: 2rem;
+        position: fixed;
+        margin-left: 10px;
+    }
+.borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.2rem;
+    }
+
+
+    .publicacoes{
+        margin-left: -320px;
+        margin-top: 500px;
+        width: 80%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 929px) {
+     .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 45rem;
+        margin-top:-3rem;
+    }
+
+    .instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 12rem;
+    font-weight: 400;
+}
+
+    .perfil-info{
+     position: absolute;
+     height: 20vh;
+    margin-left: 550px;
+    margin-top: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    .perfil-info h2{
+        margin-top: -20rem;
+         font-size: 16px;
+    }
+
+    .perfil-bloco img{
+        border-radius: 50%;
+        width: 15vh;
+        padding: 2rem;
+        position: fixed;
+        margin-left: 10px;
+    }
+
+    .borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.2rem;
+    }
+
+    .perf-numbers{
+
+        width: 100vh;
+        display: inline-block;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+    }
+
+    .descricao{
+         letter-spacing: 0.1rem;
+        font-size: 15px;
+    }
+
+
+    .descricao-bold{
+         letter-spacing: 0.1rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .publicacoes{
+        margin-left: -320px;
+        margin-top: 700px;
+        width: 80%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 718px) {
+     .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 45rem;
+        margin-top:-3rem;
+    }
+
+    .instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 18rem;
+    font-weight: 200;
+}
+
+    .perfil-info{
+     position: absolute;
+     height: 20vh;
+    margin-left: 470px;
+    margin-top: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    .perfil-info h2{
+        margin-top: -20rem;
+         font-size: 25px;
+    }
+
+    .perfil-bloco img{
+        border-radius: 50%;
+        width: 10vh;
+        padding: 2rem;
+        position: fixed;
+        margin-left: -15px;
+    }
+
+    .borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.2rem;
+    }
+
+    .perf-numbers{
+
+        width: 100vh;
+        display: inline-block;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+    }
+
+    .descricao{
+         letter-spacing: 0.1rem;
+        font-size: 15px;
+    }
+
+
+    .descricao-bold{
+         letter-spacing: 0.1rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+     .perf-numbers, .descricao, .descricao-bold{
+        margin-top: 22px;
+    }
+
+
+    .publicacoes{
+        margin-left: -320px;
+        margin-top: 700px;
+        width: 90%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+     .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 40rem;
+        margin-top:-3rem;
+    }
+
+    .instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 15rem;
+    font-weight: 200;
+}
+
+    .perfil-info{
+     position: absolute;
+     width: 50%;
+     height: 10vh;
+    margin-left: -50px;
+    margin-top: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+     .perfil-bloco img{
+        border-radius: 50%;
+        width: 8vh;
+        padding: 2rem;
+        position: fixed;
+        margin-left: -100px;
+    }
+
+    .borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.15rem;
+    }
+
+     .perf-numbers, .descricao, .descricao-bold{
+        margin-top: 22px;
+    }
+
+
+    .publicacoes{
+        margin-left: -20px;
+        margin-top: 700px;
+        width: 90%;
+        height: 600px;
+    }
+
+}
+
+
+
+@media(max-width: 559px) {
+
+  .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 30rem;
+        margin-top:-3rem;
+    }
+
+    .instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 15rem;
+    font-weight: 200;
+}
+
+    .perfil-info{
+     position: absolute;
+     width: 50%;
+     height: 10vh;
+    margin-left: -90px;
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+     .perfil-bloco img{
+        border-radius: 50%;
+        width: 6.5vh;
+        padding: 1rem;
+        position: fixed;
+        margin-left: -100px;
+    }
+
+    .borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.15rem;
+    }
+
+    .perfil-info h2{
+        margin-left: 6rem;
+       justify-content: space-between;
+    }
+    .perf-numbers{
+        margin-top: 3rem;
+        margin-left: -40px;
+    }
+
+    .descricao{
+        margin-left: -30px;
+    }
+    .descricao-bold{
+        margin-left: -30px;
+    }
+
+
+    .publicacoes{
+        margin-left: 10px;
+        margin-top: 700px;
+        width: 100%;
+        height: 600px;
+    }
+
+}
+
+
+
+
+@media(max-width: 444px) {
+
+ .nav{
+        position: fixed;
+        align-items: center;
+        display:inline-block;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-left: 11rem;
+        margin-top:-3rem;
+    }
+
+    .instagram-logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Billabong', sans-serif;
+    font-size: 2.9rem;
+    margin-left: 1rem;
+    font-weight: 200;
+}
+
+    .perfil-info{
+     position: absolute;
+     width: 50%;
+     height: 10vh;
+    margin-left: -90px;
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    .perfil-info h2{
+        margin-left: 6rem;
+       justify-content: space-between;
+    }
+     .perfil-bloco img{
+        border-radius: 50%;
+        width: 6.5vh;
+        padding: 1rem;
+        position: fixed;
+        margin-left: -100px;
+    }
+
+    .borda img{
+         position: absolute;
+         background: linear-gradient(to right, #405de6, #5851db,#833ab4,#c13584,#e1306c,#f56040,#f77737,#fcaf45);
+         padding: 0.15rem;
+    }
+
+    .perf-numbers{
+        margin-top: 3rem;
+        margin-left: -40px;
+        width: 50%;
+    }
+
+    .descricao{
+        margin-left: -30px;
+    }
+    .descricao-bold{
+        margin-left: -30px;
+    }
+
+
+}

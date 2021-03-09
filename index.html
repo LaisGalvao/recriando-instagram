@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+     <link href="http://fonts.cdnfonts.com/css/billabong" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Instagram</title>
 </head>
 <body>
-    <header>
-        <div class="cont-header">
-        <div class="logo-header">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-        </div><!--logo-header-->
-        <div class="search">
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-                <input type="text" name="busca" placeholder="Pesquisar...">
-            </div><!--searchbox-->
-        </div><!--search-->
-        <div class="notifications-icons">
-            <a href="#"><i class="far fa-compass"></i></a>
-            <a href="#"><i class="far fa-heart"></i></a>
-            <a href="#"><div class="img-miniatura" style="background-image: url('images/perfil.png');"></div></a>
-        </div><!--notificações-->
-    </div><!--cont-header-->
-    </header>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img src="img/phone.gif" alt="celular">
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <h1 class="instagram-logo">Instagram</h1>
+                <div class="profile-photo">
+                    <img src="./img/perfil.png" alt="foto de perfil">
+                </div>
+                <a href="feed.html" class="instagram-login">Continue como missguita_777</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é missguita_777?</p>
+                <p class="not-account">
+                    <span class="link-blue">Alternar contas</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
